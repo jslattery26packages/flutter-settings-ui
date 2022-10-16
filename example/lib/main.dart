@@ -37,8 +37,20 @@ class MyApp extends StatelessWidget {
         useInheritedMediaQuery: true,
         debugShowCheckedModeBanner: false,
         locale: DevicePreview.locale(context),
-        theme: ThemeData.light(),
         darkTheme: ThemeData(
+            colorScheme: ColorScheme(
+              primary: Colors.black,
+              secondary: Colors.black,
+              surface: Colors.red,
+              background: Colors.green,
+              error: Colors.black,
+              onPrimary: Colors.white,
+              onSecondary: Colors.white,
+              onSurface: Colors.white,
+              onBackground: Colors.white,
+              onError: Colors.white,
+              brightness: Brightness.dark,
+            ),
             cupertinoOverrideTheme: CupertinoThemeData(
                 barBackgroundColor: Color(0xFF1b1b1b),
                 brightness: Brightness.dark,

@@ -20,6 +20,10 @@ class _AndroidNotificationsScreenState
         title: Text('Notifications'),
       ),
       body: SettingsList(
+        darkTheme: SettingsThemeData(
+          settingsListBackground: Theme.of(context).colorScheme.background,
+          settingsSectionBackground: Theme.of(context).colorScheme.surface,
+        ),
         platform: DevicePlatform.android,
         sections: [
           SettingsSection(

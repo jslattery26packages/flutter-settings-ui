@@ -45,8 +45,12 @@ class AndroidSettingsSection extends StatelessWidget {
             child: title!,
           ),
         ),
-        Container(
+        Card(
+          margin: EdgeInsets.all(0),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.zero),
+          shadowColor: Colors.transparent,
           color: theme.themeData.settingsSectionBackground,
+          elevation: theme.themeData.settingsSectionElevation,
           child: tileList,
         ),
       ],
